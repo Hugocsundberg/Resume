@@ -2,6 +2,7 @@ import { easings, stagger } from 'animejs';
 import anime from 'animejs/lib/anime.es.js';
 const sectionArray = document.querySelectorAll('section')
 
+if(window.scrollY <= 0) {
     anime({
         targets: sectionArray,
         opacity: [0, 1],
@@ -9,14 +10,5 @@ const sectionArray = document.querySelectorAll('section')
         delay: anime.stagger(200),
         easing: 'spring(1, 120, 30, 0)'
     })
-
-    // anime({
-    //     targets: '.pulse',
-    //     opacity: [0.2, 1],
-    //     loop: true,
-    //     duration: 1100,
-    //     direction: 'alternate',
-    //     easing: 'easeInOutQuad'
-
-    // })
+}
 
