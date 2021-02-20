@@ -12,9 +12,9 @@ if(window.scrollY <= 0) {
     })
 }
 
-const sections = document.querySelectorAll('section')
-for(let i = 1; i < sections.length; i++) {
-    sections[i].insertAdjacentElement('beforeend', document.createElement('br'))
-        sections[i].insertAdjacentElement('beforeend', document.createElement('hr'))
-}
+// const sections = document.querySelectorAll('section')
+// for(let i = 1; i < sections.length; i++) {
+//     sections[i].insertAdjacentElement('beforeend', document.createElement('br'))
+//         sections[i].insertAdjacentElement('beforeend', document.createElement('hr'))
+// }
 

@@ -53,6 +53,10 @@ p {
     margin-bottom: .5rem;
 }
 
+h2 {
+    position: relative;
+}
+
 section {
     margin-bottom: 2rem;
 }
@@ -101,6 +105,20 @@ section {
     width: 100%;
 }
 
+.for-print {
+    display: none;
+}
+.pagebreak {
+    clear: both;
+    page-break-after: always;
+}
+
+h2 { 
+    page-break-before: always;
+    break-before: always;
+  }
+
+
 @media (min-width: 600px) {
     html {
         font-size: 16px;
@@ -113,4 +131,21 @@ section {
             display: unset;
         }
     }
+}
+
+@media print {
+    .for-print {
+        display: block;
+    }
+    .for-screen {
+        display: none;
+    }
+    h2 { 
+        page-break-after: always;
+        page-break-inside: avoid;
+      }
+    p {
+        break-after: always;
+    }
+    
 }

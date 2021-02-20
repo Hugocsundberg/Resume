@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css" media="print">
+        div.break
+        {
+          page-break-after: always;
+          page-break-inside: avoid;
+        }
+      </style>
     <meta name="description" content="Hugo Sundberg">
     <link rel="shortcut icon" href="media/favicon-96x96.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -47,15 +54,16 @@
             <div class="upper">
                 <h3>Högskolan i Halmstad - Psykologi - allmän ämnesintroduktion | aug. 2016 - dec. 2016 </h3>
             </div>
-            <p>
+            <p class="pagebreakafter">
                 Kursen är en introduktion till psykologi och täcker ämnen från inlärning och motivation till metakognition.
             </p>
         </li>
     </ul>
-    </section>
-    <section>
-    <h2>🏢 Arbetslivserfarenhet</h2>    
-    <ul>
+</section>
+<div class="break"> </div>
+<section class="break">
+    <h2 class="pagebreakbefore">🏢 Arbetslivserfarenhet</h2>    
+    <ul class="break">
         <li>
             <h3>Produktionsledare Provide IT | dec. 2018 - sep. 2019</h3>
             <p>På Provide IT ansvarade jag för genomförandet av projekt från planeringsfasen till leverans. Rollen innebar externa möten med kund samt interna möten med utvecklare. Jag ansvarade för att tid och budget höll sig inom projektets ramar. Utöver detta hade jag en roll som testare. Som testare och kvalitetssäkrare ansvarade jag för kvalitet av produkten som levererades till kund. Utmaningar i dessa roller var korta tidsramar och en pressad budget att förhålla sig emot. Nyckeln här är att hålla en bra kommunikation och ett bra samarbete med kunden samt att vara öppen och ha god transparens inför kund liksom interna intressenter som utvecklare och ledning.</p>
@@ -81,40 +89,63 @@
     <li>Spanska - gymnasienivå</li>
     </section>
     <section>
+    <h2>Teknologier</h2>    
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SCSS</li>
+        <li>JS</li>
+        <li>NodeJS</li>
+        <li>NPM</li>
+        <li>PHP</li>
+        <li>Composer</li>
+        <li>React</li>
+        <li>C#</li>
+        <li>Wordpress</li>
+        <li>Laravel</li>
+        <li>anime.js</li>
+    </ul>
+    </section>
+    <section>
     <h2>🌐 Github</h2>    
-        <a href="https://github.com/Hugocsundberg"><p>Hugo Sundberg Github</p></a>
-        <h3>Utvalda Github-projekt</h3>
-        <ul>
-            <li>
-                <h4>Speed Feed</h4>
-                <p>Speed Feed är ett socialt nätverk designat och skapat av mig själv byggt i PHP, JS och CSS. Projektet hostas på Heroku med en Postgres-databas.</p>
-                <a href="https://github.com/Hugocsundberg/Speed-Feed_Social_Network">Github-projekt</a> |
-                <a href="https://speed-feed.herokuapp.com/">Live-site</a> <br><br>
-                <img class="projectGif" loading="lazy" src="./media/SpeedFeedConfirmboxGif.gif" alt="Short sequence of deleting a post">
+        <a class="for-screen" href="https://github.com/Hugocsundberg"><p>Hugo Sundberg Github</p></a>
+        <p class="for-print">https://github.com/Hugocsundberg</p>
+        <h3 class="for-screen">Utvalda Github-projekt</h3>
+        <ul class="for-screen">
+            <li class="for-screen">
+                <h4 class="for-screen">Speed Feed</h4>
+                <p class="for-screen">Speed Feed är ett socialt nätverk designat och skapat av mig själv byggt i PHP, JS och CSS. Projektet hostas på Heroku med en Postgres-databas.</p>
+                <a class="for-screen" href="https://github.com/Hugocsundberg/Speed-Feed_Social_Network">Github-projekt</a> |
+                <a class="for-screen" href="https://speed-feed.herokuapp.com/">Live-site</a> <br><br>
+
+                <!-- <img class="projectGif" loading="lazy" src="./media/SpeedFeedConfirmboxGif.gif" alt="Short sequence of deleting a post"> -->
             </li>
-            <li>
-                <h4>True Evolution</h4>
-                <p>True Evolution är ett äldre projekt som jag skapade för att lära mig om klasser och objekt. Målet är att överleva så länge som möjligt. Tangentbord krävs för att spela.</p>
-                <a href="https://github.com/Hugocsundberg/True-Evolution">Github-projekt</a> |
-                <a href="https://trueevolution.herokuapp.com/">Live-site</a> <br><br>
-                <img class="projectGif" src="./media/trueEvolution.gif" loading="lazy" alt="Short gameplay recording">
+            <li class="for-screen">
+                <h4 class="for-screen">True Evolution</h4>
+                <p class="for-screen">True Evolution är ett äldre projekt som jag skapade för att lära mig om klasser och objekt. Målet är att överleva så länge som möjligt. Tangentbord krävs för att spela.</p>
+                <a class="for-screen" href="https://github.com/Hugocsundberg/True-Evolution">Github-projekt</a> |
+                <a class="for-screen" href="https://trueevolution.herokuapp.com/">Live-site</a> <br><br>
+                <!-- <img class="projectGif" src="./media/trueEvolution.gif" loading="lazy" alt="Short gameplay recording"> -->
                 <img src="" alt="">
             </li>
-            <li>
-                <h4>Morse translator</h4>
-                <p>En app som jag skapade för att lära mig regex. Appen översätter en mening till morse fast med stora och små 'A' istället för punkter och streck. Den kan även översätta tillbaka till en vanlig mening från 'A-morse'. Appen använder sig av PHP och regex för att översätta server-side.</p>
-                <a href="https://github.com/Hugocsundberg/AAA-translation">Github-projekt</a> |
-                <a href="https://aaa-translator.herokuapp.com/">Live-site</a> <br><br>
-                <img loading="lazy" class="projectGif" src="./media/morse.png" alt="Morse code translator. (Website screenshot)">
+            <li class="for-screen">
+                <h4 class="for-screen">Morse translator</h4>
+                <p class="for-screen">En app som jag skapade för att lära mig regex. Appen översätter en mening till morse fast med stora och små 'A' istället för punkter och streck. Den kan även översätta tillbaka till en vanlig mening från 'A-morse'. Appen använder sig av PHP och regex för att översätta server-side.</p>
+                <a class="for-screen" href="https://github.com/Hugocsundberg/AAA-translation">Github-projekt</a> |
+                <a class="for-screen" href="https://aaa-translator.herokuapp.com/">Live-site</a> <br><br>
+                <!-- <img loading="lazy" class="projectGif" src="./media/morse.png" alt="Morse code translator. (Website screenshot)"> -->
             </li>
         </ul>
     </section>
     <section>
         <h2>Kontakt</h2>
         <ul>
-            <a href="https://www.linkedin.com/in/hugosundberg/"><li>LinkedIn</li></a>
-            <a href="tel:0735433308"><li>0735433308</li></a>
-            <a href="mailto:hugocsundberg@gmail.com"><li>hugocsundberg@gmail.com</li></a>
+            <a class="for-screen" href="https://www.linkedin.com/in/hugosundberg/"><li>LinkedIn</li></a>
+            <p class="for-print">LinkedIn: https://www.linkedin.com/in/hugosundberg/</p>
+            <a class="for-screen" href="tel:0735433308"><li>0735-43 33 08</li></a>
+            <p class="for-print">Tel: 0735-43 33 08</p>
+            <a class="for-screen" href="mailto:hugocsundberg@gmail.com"><li>hugocsundberg@gmail.com</li></a>
+            <p class="for-print">Mail: hugocsundberg@gmail.com</p>
         </ul>
     </section>
 </div>
