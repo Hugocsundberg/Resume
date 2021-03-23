@@ -42,7 +42,7 @@ if(parsed.lang === 'sv' || !parsed.lang) {
     KortOmMigP.textContent="Hi, I'm 25 years old and is currently studying fullstack web development at Yrgo. I have previously studied and worked as production leader at a web development firm in Gothenburg. After a couple years of being in the IT and web sphere i can't see myself working in another field. Beyond programming I enjoy spending time at the gym or playing disc golf. I have a big interest for design and UX and believe that a good design and UX is mandatory for good functionality to deliver value."
     utbildning .textContent="🎓 Education"
     yrgo.textContent="Yrgo - Web development | sep. 2020 - jul. 2022"
-    yrgoP.textContent="During the course you learn everything you need to call your self a fullstack developer, wich means that you will be able to work on all levels in an IT system and feel at home in both front-end, back-end, databases and server environment."
+    yrgoP.textContent="During the course you learn everything you need to call your self a fullstack developer, which means that you will be able to work on all levels in an IT system and feel at home in both front-end, back-end, databases and server environment."
     jensen.textContent="JENSEN - IT project management | sep. 2017 - jan. 2019"
     jensenP.textContent="The course contains courses in leadership and project management methodology as well as technical courses in E-commerce, system development and mobile development."
     cert.textContent="Certificate"
