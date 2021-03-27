@@ -110,16 +110,6 @@ section {
 .for-print {
     display: none;
 }
-.pagebreak {
-    clear: both;
-    page-break-after: always;
-}
-
-h2 { 
-    page-break-before: always;
-    break-before: always;
-  }
-
 
 @media (min-width: 600px) {
     html {
