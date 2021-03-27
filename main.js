@@ -5,6 +5,12 @@ const queryString = require('query-string');
 const parsed = queryString.parse(location.search);
 
 //Language
+    const värderingar = document.querySelector('.langVar_värderingar')
+    const design = document.querySelector('.langVar_designP')
+    const kvalitet = document.querySelector('.langVar_kvalitet')
+    const kvalitetP = document.querySelector('.langVar_kvalitetP')
+    const prof = document.querySelector('.langVar_prof')
+    const profP = document.querySelector('.langVar_profP')
     const KortOmMig = document.querySelector('.langVar_kortOmMig')
     const KortOmMigP = document.querySelector('.langVar_kortOmMigP')
     const utbildning = document.querySelector('.langVar_utbildning')
@@ -35,7 +41,7 @@ const parsed = queryString.parse(location.search);
     const kontakt = document.querySelector('.langVar_kontakt')
     const portfolioLink = document.querySelector('.portfolio-link')
 
-if(parsed.lang === 'sv' || !parsed.lang) {
+if( parsed.lang === 'sv' || !parsed.lang) {
     //Svenska
 } else if(parsed.lang === 'en') {
     //Engelska
@@ -49,7 +55,7 @@ if(parsed.lang === 'sv' || !parsed.lang) {
     cert.textContent="Certificates"
     hamlstad.textContent="Högskolan i Halmstad - Psychology - general introduction | aug. 2016 - dec. 2016 "
     hamlstadP.textContent="The course provides an introduction to psychology's theories, methods and areas of use. It also looks at psychology as a science and modern scientific thinking are studied, as well as the individual's biological development, motivation and emotion, cognitive abilities, hereditary and environmental factors as well as perception, consciousness, learning, memory, language, stress and stress management."
-    arbete.textContent="Work experience"
+    arbete.innerHTML="🏢 Work experience <span style=\"font-size: 1rem; font-weight: lighter;\"><i>(ordered by relevance)</i></span>"
     provideit.textContent="Production leader Provide IT | dec. 2018 - sep. 2019"
     provideitP.textContent="At Provide IT, I was responsible for the implementation of projects from the planning phase to delivery. The role involved external meetings with clients and internal meetings with developers. I was responsible for keeping time and budget within the framework of the project. In addition to this, I had a role as a tester. As a tester and quality assurer, I was responsible for the quality of the product that was delivered to the customer. Challenges in these roles were short time frames and a tight budget to deal with. The key here was to maintain good communication and good cooperation with the customer and to be open and have good transparency to the customer as well as internal stakeholders such as developers and management."
     skytte.textContent="Student Assistant Skytteskolan | sep. 2019 - jun. 2020"
@@ -67,9 +73,15 @@ if(parsed.lang === 'sv' || !parsed.lang) {
     projektP.textContent="Portfolio"
     portfolioLink.setAttribute('href', 'https://sundberg-portfolio.netlify.app/')
     kontakt.textContent="Contact"
+    värderingar.textContent="My values"
+    design.textContent="I have a great interest in design and UX and believe that good design and UX are a must for good functionality to be able to deliver value."
+    kvalitet.textContent="Quality"
+    kvalitetP.textContent="I believe that high quality wins in the long run. Whether it's about the quality of a website or internal and external communication with developers and clients. I think that even if it requires a little more effort in the short term, it is worth it in the long term by improved relationships, trust and branding. I try to make sure that high quality permeates everything I do."
+    prof.textContent="Professionalism and integrity"
+    profP.textContent="I value professionalism highly and see myself as an extension of the company I work for. I believe it is important to work as a team and reflect internal cohesion towards the customer. I believe that it is important to take personal responsibility for the tasks for which you are responsible and ensure that they are delivered on time or, in the worst case, flagged upwards with good time margins if problems arise that affect the delivery."
 }
 
-const sectionArray = document.querySelectorAll('section')
+const sectionArray = document.querySelectorAll('.animate-me')
 
 if(window.scrollY <= 0) {
     anime({
