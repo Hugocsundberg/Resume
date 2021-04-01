@@ -71,7 +71,7 @@ if( parsed.lang === 'sv' || !parsed.lang) {
     teknologier.textContent="Technologies"
     projekt.textContent="Projects"
     projektP.textContent="Portfolio"
-    portfolioLink.setAttribute('href', 'https://sundberg-portfolio.netlify.app/')
+    portfolioLink.setAttribute('href', 'https://hugosundberg.codes/')
     kontakt.textContent="Contact"
     värderingar.textContent="My values"
     design.textContent="I have a great interest in design and UX and believe that good design and UX are a must for good functionality to be able to deliver value."
