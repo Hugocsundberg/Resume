@@ -14,7 +14,6 @@ const parsed = queryString.parse(location.search);
     const KortOmMig = document.querySelector('.langVar_kortOmMig')
     const KortOmMigP = document.querySelector('.langVar_kortOmMigP')
     const utbildning = document.querySelector('.langVar_utbildning')
-    const utbildningslista = document.querySelector('.langVar_education-list')
     const yrgo = document.querySelector('.langVar_yrgo')
     const yrgoP = document.querySelector('.langVar_yrgoP')
     const jensen = document.querySelector('.langVar_jensen')
@@ -40,6 +39,7 @@ const parsed = queryString.parse(location.search);
     const projektP = document.querySelector('.langVar_projektP')
     const kontakt = document.querySelector('.langVar_kontakt')
     const portfolioLink = document.querySelector('.portfolio-link')
+    const fässbergP = document.querySelector('.langVar_fässbergP')
 
 if( parsed.lang === 'sv' || !parsed.lang) {
     //Svenska
@@ -79,6 +79,7 @@ if( parsed.lang === 'sv' || !parsed.lang) {
     kvalitetP.textContent="I believe that high quality wins in the long run. Whether it's about the quality of a website or internal and external communication with developers and clients. I think that even if it requires a little more effort in the short term, it is worth it in the long term by improved relationships, trust and branding. I try to make sure that high quality permeates everything I do."
     prof.textContent="Professionalism and integrity"
     profP.textContent="I value professionalism highly and see myself as an extension of the company I work for. I believe it is important to work as a team and reflect internal cohesion towards the customer. I believe that it is important to take personal responsibility for the tasks for which you are responsible and ensure that they are delivered on time or, in the worst case, flagged upwards with good time margins if problems arise that affect the delivery."
+    fässbergP.textContent="High school diploma."
 }
 
 const sectionArray = document.querySelectorAll('.animate-me')
