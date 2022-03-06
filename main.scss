@@ -79,6 +79,15 @@ section {
   height: 0;
 }
 
+.langSwitch {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  max-width: 40rem;
+  gap: 8px;
+  align-items: center;
+}
+
 .flex-center {
   padding: 2rem;
   width: calc(100vw - 4rem);

@@ -52,7 +52,7 @@ if (parsed.lang === "sv" || !parsed.lang) {
   yrgo.textContent = "Yrgo - Web development | sep. 2020 - jul. 2022";
   yrgoP.textContent =
     "During the course you learn everything you need to call your self a fullstack developer, which means that you will be able to work on all levels in an IT system and feel at home in both front-end, back-end, database and server environment.";
-  jensen.textContent = "JENSEN - IT project management | sep. 2017 - jan. 2019";
+  jensen.textContent = "JENSEN - IT project management | aug. 2017 - dec. 2018";
   jensenP.textContent =
     "The course contains classes in leadership and project management methodology as well as technical courses in E-commerce, system development and mobile development.";
   cert.textContent = "Certificates";
@@ -66,7 +66,7 @@ if (parsed.lang === "sv" || !parsed.lang) {
     "Production leader Provide IT | dec. 2018 - sep. 2019";
   provideitP.textContent =
     "At Provide IT, I was responsible for the implementation of projects from the planning phase to delivery. The role involved external meetings with clients and internal meetings with developers. I was responsible for keeping time and budget within the framework of the project. In addition to this, I had a role as a tester. As a tester and quality assurer, I was responsible for the quality of the product that was delivered to the customer. Challenges in these roles were short time frames and a tight budget to deal with. The key here was to maintain good communication and good cooperation with the customer and to be open and have good transparency to the customer as well as internal stakeholders such as developers and management.";
-  skytte.textContent = "Student Assistant Skytteskolan | sep. 2019 - jun. 2020";
+  skytte.textContent = "Student Assistant Skytteskolan | sep. 2019 - aug. 2020";
   skytteP.textContent =
     "At Skytteskolan, I worked as a Student Assistant for a student with type 1 diabetes. My responsibility was to monitor the student's blood sugar level and make sure it did not end up above or below normal values.";
   hästhagen.textContent =
@@ -83,7 +83,6 @@ if (parsed.lang === "sv" || !parsed.lang) {
   teknologier.textContent = "Technologies";
   projekt.textContent = "Projects";
   projektP.textContent = "Portfolio";
-  portfolioLink.setAttribute("href", "https://hugosundberg.codes/");
   kontakt.textContent = "Contact";
   värderingar.textContent = "My values";
   design.textContent =
