@@ -47,7 +47,7 @@ if (parsed.lang === "sv" || !parsed.lang) {
   //Engelska
   KortOmMig.textContent = "About me";
   KortOmMigP.textContent =
-    "Hello, I am a 26-year-old technology nerd who's currently studying web development at Yrgo and will graduate this summer. I have previously studied and worked as a production manager at a web development company in Gothenburg. After a few years of being in the IT and web sphere, I can not see myself working in any other industry. When I am not programming, I like to work out or play disc golf. I have a great interest in design and UX and believe that good design and UX is key for good functionality to be able to deliver value Programming is my hobby and passion.";
+    "I am a 26-year-old technology nerd who's currently studying web development at Yrgo and will graduate this summer. I have previously studied and worked as a production manager at a web development company in Gothenburg. After a few years in the IT and web sphere, I can not see myself working in any other industry. When I am not programming, I like to work out or play disc golf. I have a great interest in design and UX and believe that good design and UX is key for good functionality to be able to deliver value Programming is my hobby and passion.";
   utbildning.textContent = "🎓 Education";
   yrgo.textContent = "Yrgo - Web development | sep. 2020 - jul. 2022";
   yrgoP.textContent =
